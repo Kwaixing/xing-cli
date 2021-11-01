@@ -1,0 +1,45 @@
+{
+  "name": "xing-cli",
+  "version": "0.1.0",
+  "description": "xing-cli to clone new vue templates for a new repo",
+  "exports": "./lib/index.js",
+  "type": "module" ,
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "bin": {
+    "xing": "bin/xing.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "start": "npm run build && xing create demo",
+    "build": "tsc --build && tree lib",
+    "prettier": "prettier --write \"src/**/*.ts\""
+  },
+  "author": "xingrk",
+  "license": "ISC",
+  "keywords": ["cli", "vue", "typescript"],
+  "bugs": {
+    "url": "https://github.com/xingrk/xing-cli"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^8.2.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.2.0",
+    "ora": "^6.0.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^8.1.3",
+    "@types/node": "^16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "prettier": "^2.4.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.4"
+  }
+}
