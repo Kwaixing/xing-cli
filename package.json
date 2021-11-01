@@ -1,35 +1,39 @@
 {
-  "name": "xing-cli",
+  "name": "xingrk-cli",
   "version": "0.1.0",
-  "description": "xing-cli to clone new vue templates for a new repo",
+  "description": "xingrk-cli to clone new vue templates for a new repo",
   "exports": "./lib/index.js",
-  "type": "module" ,
+  "type": "module",
   "engines": {
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "bin": {
-    "xing": "bin/xing.js"
+    "xing": "bin/xingrk.js"
   },
   "directories": {
     "lib": "lib"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "start": "npm run build && xing create demo",
+    "start": "npm run build && xingrk create demo",
     "build": "tsc --build && tree lib",
     "prettier": "prettier --write \"src/**/*.ts\""
   },
-  "author": "xingrk <taiyangdexingxing@gmail.com> (https://github.com/xingrk/xing-cli)",
+  "author": "xingrk <taiyangdexingxing@gmail.com> (https://github.com/xingrk/xingrk-cli)",
   "license": "ISC",
-  "keywords": ["cli", "vue", "typescript"],
+  "keywords": [
+    "cli",
+    "vue",
+    "typescript"
+  ],
   "bugs": {
-    "url": "https://github.com/xingrk/xing-cli"
+    "url": "https://github.com/xingrk/xingrk-cli"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xingrk/xing-cli.git"
+    "url": "git+https://github.com/xingrk/xingrk-cli.git"
   },
-  "homepage": "https://github.com/xingrk/xing-cli#README",
+  "homepage": "https://github.com/xingrk/xingrk-cli#README",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^8.2.0",

@@ -1,5 +1,5 @@
 export const git_address =
-  'direct:https://github.com/Kwaixing/templates.git';
+  'direct:https://github.com/xingrk/templates.git';
 
 export const eslintrc = `module.exports = {
     "env": {
