@@ -19,7 +19,7 @@
     "build": "tsc --build && tree lib",
     "prettier": "prettier --write \"src/**/*.ts\""
   },
-  "author": "xingrk",
+  "author": "xingrk <taiyangdexingxing@gmail.com> (https://github.com/xingrk/xing-cli)",
   "license": "ISC",
   "keywords": ["cli", "vue", "typescript"],
   "bugs": {
